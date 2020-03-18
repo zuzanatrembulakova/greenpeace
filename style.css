@@ -142,24 +142,24 @@ nav a:hover, nav a.active {
 }
 
 .who > a > div {
-    background: url(images/gp_logo-02.svg) no-repeat;
-    /*background: url(images/gp-sm-05.svg) no-repeat;*/
+    /*background: url(images/gp_logo-02.svg) no-repeat;*/
+    background: url(images/gp-sm-05.svg) no-repeat;
 
     width: 225px;
     height: 227px;
     /*padding: 10px;*/
 }
 .what > a > div {
-    background: url(images/planet-sm-03.svg) no-repeat;
-    /*background: url(images/planet-sm-07.svg) no-repeat;*/
+    /*background: url(images/planet-sm-03.svg) no-repeat;*/
+    background: url(images/planet-sm-07.svg) no-repeat;
 
     width: 225px;
     height: 227px;
     /*padding: 10px;*/
 }
 .how > a > div {
-    background: url(images/questionmark-04.svg) no-repeat;
-    /*background: url(images/questionmark-sm-06.svg) no-repeat;*/
+    /*background: url(images/questionmark-04.svg) no-repeat;*/
+    background: url(images/questionmark-sm-06.svg) no-repeat;
 
     width: 225px;
     height: 227px;
