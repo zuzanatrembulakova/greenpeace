@@ -414,39 +414,22 @@ nav a:hover, nav a.active {
 }
 
 @media only screen and (max-width: 800px) {
-    .burger_menu{
-        position: fixed;
-        top: 2vh;
-        left: 83vw;
-        display: block;
-        cursor: pointer;
-        width: 50px;
-        height: 50px;
-        z-index: 10;
-        border: none;
-        border-radius: 50%;
-        outline: none;
-        background-color: var(--white);
-    }
     nav {
-        display: none;
+        position: static;
         height: auto;
-        flex-direction: column;
         z-index: 1;
+        width: 100%;
+        overflow: hidden;
+        background-color: var(--green);
+        z-index: 10;
     }
-
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        font-size: 10px;
-        padding: 5px;
-        text-align: center;
-        margin: 0;
+    .link_position {
+        margin: 5px;
     }
-    nav li{
-        padding: 5px;
+    nav a {
+        padding: 15px;
+        font-size: 20px;
     }
-
     footer ul{
         padding: 0;
     }
