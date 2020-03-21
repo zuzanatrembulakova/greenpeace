@@ -14,6 +14,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: var(--primary-font);
 }
@@ -24,13 +25,14 @@ body {
     width: 100%;
 }
 
-h2{
+h2 {
     font-family: var(--primary-font);
     font-size: 28px;
     line-height: 34px;
     font-weight: 700;
 }
-p{
+
+p {
     font-family: var(--secondary-font);
     font-size: 20px;
     line-height: 32px;
@@ -38,7 +40,7 @@ p{
     margin-top: 0;
 }
 
-footer{
+footer {
     height: 10vh;
     margin-top: 5vh;
     display: flex;
@@ -46,16 +48,19 @@ footer{
     justify-content: center;
 
 }
-footer ul{
+
+footer ul {
     margin-left: auto;
     margin-right: auto;
 }
-footer a{
+
+footer a {
     padding: 14px 16px;
     filter: invert(90%);
     text-decoration: none;
 }
-footer a:hover{
+
+footer a:hover {
     filter: invert(100%);
 }
 
@@ -67,11 +72,13 @@ nav {
     z-index: 10;
     position: fixed;
 }
+
 .link_position {
     margin: 30px;
     margin-right: 200px;
     float: right;
 }
+
 nav a {
     color: var(--white);
     text-align: center;
@@ -82,7 +89,9 @@ nav a {
     letter-spacing: 3px;
     text-transform: uppercase;
 }
-nav a:hover, nav a.active {
+
+nav a:hover,
+nav a.active {
     color: var(--green);
     font-weight: bolder;
     border-bottom: 2px solid var(--green);
@@ -101,13 +110,14 @@ nav a:hover, nav a.active {
 
 /*--------------------INDEX--------------------*/
 
-.video-container{
+.video-container {
     width: 100%;
-    overflow:hidden;
-    display:block;
+    overflow: hidden;
+    display: block;
     height: 80vh;
 }
-#videoBG{
+
+#videoBG {
     width: 100%;
 }
 
@@ -119,16 +129,22 @@ nav a:hover, nav a.active {
     margin-left: auto;
     margin-right: auto;
 }
+
 .main_menu {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     text-align: center;
 }
 
-.who, .what, .how {
+.who,
+.what,
+.how {
     margin-top: 10vh;
 }
-.who > a > div, .what > a > div, .how > a > div {
+
+.who > a > div,
+.what > a > div,
+.how > a > div {
     /*border: 2px solid var(--black);*/
     margin-left: auto;
     margin-right: auto;
@@ -136,7 +152,10 @@ nav a:hover, nav a.active {
     transition: transform .2s;
     filter: brightness(90%);
 }
-.who > a > div:hover, .what > a > div:hover, .how > a > div:hover {
+
+.who > a > div:hover,
+.what > a > div:hover,
+.how > a > div:hover {
     transform: scale(1.1);
     filter: brightness(110%);
 }
@@ -149,6 +168,7 @@ nav a:hover, nav a.active {
     height: 227px;
     /*padding: 10px;*/
 }
+
 .what > a > div {
     background: url(images/planet-sm-03.svg) no-repeat;
     /*background: url(images/planet-sm-07.svg) no-repeat;*/
@@ -157,6 +177,7 @@ nav a:hover, nav a.active {
     height: 227px;
     /*padding: 10px;*/
 }
+
 .how > a > div {
     background: url(images/questionmark-04.svg) no-repeat;
     /*background: url(images/questionmark-sm-06.svg) no-repeat;*/
@@ -168,12 +189,12 @@ nav a:hover, nav a.active {
 
 /*--------------------WHO PAGE--------------------*/
 
-.bg_image > img{
+.bg_image > img {
     width: 100%;
     filter: brightness(85%);
 }
 
-.about_gp{
+.about_gp {
     padding-top: 2vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -181,21 +202,24 @@ nav a:hover, nav a.active {
     text-align: center;
 }
 
-.about_gp > h2{
+.about_gp > h2 {
     grid-row: 1;
     grid-column: 2;
 }
-.about_gp > .about_gp_subheading{
+
+.about_gp > .about_gp_subheading {
     grid-row: 2;
     grid-column: 2;
     font-weight: 700;
 }
-.about_gp > .about_gp_text{
+
+.about_gp > .about_gp_text {
     grid-row: 3;
     grid-column: 2;
     text-align: justify;
 }
-.about_gp > a > button{
+
+.about_gp > a > button {
     grid-row: 4;
     grid-column: 2;
 
@@ -209,15 +233,16 @@ nav a:hover, nav a.active {
     cursor: pointer;
 
     margin-top: 3vh;
-    justify-self:center;
+    justify-self: center;
     transition: .5s;
 }
-.about_gp > a > button:hover{
+
+.about_gp > a > button:hover {
     background-color: var(--blue);
     color: var(--white);
 }
 
-.gp-logo{
+.gp-logo {
     grid-row: 1 / 5;
     grid-column: 1;
     align-self: center;
@@ -225,12 +250,12 @@ nav a:hover, nav a.active {
 
 /*--------------------WHAT PAGE--------------------*/
 
-.what_main{
+.what_main {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.planet{
+.planet {
     background: url(images/planet-illustration-09.png) no-repeat;
     width: 601px;
     height: 586px;
@@ -246,6 +271,7 @@ nav a:hover, nav a.active {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 /*.planet > img{
     width: 100%;
     display: grid;
@@ -275,24 +301,27 @@ nav a:hover, nav a.active {
     color: var(--light-blue);
 
 }
+
 .plus_button:hover {
     background: var(--light-blue);
     cursor: pointer;
 }
 
-.arctic_position{
+.arctic_position {
     grid-column: 2;
     grid-row: 1;
     margin-left: 140px;
     margin-top: 3px;
 }
-.frog_position{
+
+.frog_position {
     grid-column: 1;
     grid-row: 1;
     margin-left: 40px;
     margin-top: 290px;
 }
-.africa_position{
+
+.africa_position {
     grid-column: 2;
     grid-row: 1;
     margin-left: 40px;
@@ -302,12 +331,33 @@ nav a:hover, nav a.active {
 .plusSign {
     line-height: 0rem;
 }
+
 .plusSign:hover {
     color: white;
 }
 
+/*--------------------HOW PAGE--------------------*/
+
+.steps img {
+    max-width: 55%;
+    margin-left: 15%;
+}
+
+.blue img {
+    margin-left: 30%;
+}
+
+.earth img {
+    max-width: 25%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
 @media only screen and (max-width: 800px) {
-    .burger_menu{
+    .burger_menu {
         position: fixed;
         top: 2vh;
         left: 83vw;
@@ -321,6 +371,7 @@ nav a:hover, nav a.active {
         outline: none;
         background-color: var(--white);
     }
+
     nav {
         display: none;
         height: auto;
@@ -336,29 +387,36 @@ nav a:hover, nav a.active {
         text-align: center;
         margin: 0;
     }
-    nav li{
+
+    nav li {
         padding: 5px;
     }
 
-    .bg_image > img{
+    .bg_image > img {
         max-width: 100%;
     }
-    .about_gp{
+
+    .about_gp {
         grid-template-columns: 1fr;
     }
-    .about_gp > h2{
+
+    .about_gp > h2 {
         grid-column: 1;
     }
-    .about_gp > .about_gp_subheading{
+
+    .about_gp > .about_gp_subheading {
         grid-column: 1;
     }
-    .about_gp > .about_gp_text{
+
+    .about_gp > .about_gp_text {
         grid-column: 1;
     }
-    .about_gp > a > button{
+
+    .about_gp > a > button {
         grid-column: 1;
     }
-    .gp-logo{
-       display: none;
+
+    .gp-logo {
+        display: none;
     }
 }
