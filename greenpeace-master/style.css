@@ -1,0 +1,422 @@
+:root {
+    --green: #49b048;
+    --blue: #093f60;
+    --white: #ffffff;
+    --black: #0a0c19;
+    --light-blue: #68dfde;
+    --transparent-black: #0a0c19A5;
+    --transparent-blue: #093f60A5;
+
+    --primary-font: "Roboto", sans-serif;
+    --secondary-font: "Lora", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--primary-font);
+}
+
+.full-width {
+    background: var(--blue);
+    color: white;
+    width: 100%;
+}
+
+h2 {
+    font-family: var(--primary-font);
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 700;
+}
+
+p {
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+footer {
+    height: 10vh;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer ul {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer a {
+    padding: 14px 16px;
+    filter: invert(90%);
+    text-decoration: none;
+}
+
+footer a:hover {
+    filter: invert(100%);
+}
+
+/*--------------------NAVIGATION BAR--------------------*/
+nav {
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--transparent-blue);
+    z-index: 10;
+    position: fixed;
+}
+
+.link_position {
+    margin: 30px;
+    margin-right: 200px;
+    float: right;
+}
+
+nav a {
+    color: var(--white);
+    text-align: center;
+    padding: 23px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--green);
+    font-weight: bolder;
+    border-bottom: 2px solid var(--green);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.burger_menu {
+    display: none;
+}
+
+.index_main {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--------------------INDEX--------------------*/
+
+.video-container {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    height: 80vh;
+}
+
+#videoBG {
+    width: 100%;
+}
+
+.main_quote {
+    margin-top: 10vh;
+    text-align: center;
+    max-width: 700px;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main_menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    text-align: center;
+}
+
+.who,
+.what,
+.how {
+    margin-top: 10vh;
+}
+
+.who > a > div,
+.what > a > div,
+.how > a > div {
+    /*border: 2px solid var(--black);*/
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: transform .2s;
+    filter: brightness(90%);
+}
+
+.who > a > div:hover,
+.what > a > div:hover,
+.how > a > div:hover {
+    transform: scale(1.1);
+    filter: brightness(110%);
+}
+
+.who > a > div {
+    background: url(images/gp_logo-02.svg) no-repeat;
+    /*background: url(images/gp-sm-05.svg) no-repeat;*/
+
+    width: 225px;
+    height: 227px;
+    /*padding: 10px;*/
+}
+
+.what > a > div {
+    background: url(images/planet-sm-03.svg) no-repeat;
+    /*background: url(images/planet-sm-07.svg) no-repeat;*/
+
+    width: 225px;
+    height: 227px;
+    /*padding: 10px;*/
+}
+
+.how > a > div {
+    background: url(images/questionmark-04.svg) no-repeat;
+    /*background: url(images/questionmark-sm-06.svg) no-repeat;*/
+
+    width: 225px;
+    height: 227px;
+    /*padding: 10px;*/
+}
+
+/*--------------------WHO PAGE--------------------*/
+
+.bg_image > img {
+    width: 100%;
+    filter: brightness(85%);
+}
+
+.about_gp {
+    padding-top: 2vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+    text-align: center;
+}
+
+.about_gp > h2 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.about_gp > .about_gp_subheading {
+    grid-row: 2;
+    grid-column: 2;
+    font-weight: 700;
+}
+
+.about_gp > .about_gp_text {
+    grid-row: 3;
+    grid-column: 2;
+    text-align: justify;
+}
+
+.about_gp > a > button {
+    grid-row: 4;
+    grid-column: 2;
+
+    border: 2px solid var(--blue);
+    font-size: 16px;
+    background-color: transparent;
+    font-weight: 400;
+    letter-spacing: 3px;
+    padding: 10px;
+    width: 300px;
+    cursor: pointer;
+
+    margin-top: 3vh;
+    justify-self: center;
+    transition: .5s;
+}
+
+.about_gp > a > button:hover {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.gp-logo {
+    grid-row: 1 / 5;
+    grid-column: 1;
+    align-self: center;
+}
+
+/*--------------------WHAT PAGE--------------------*/
+
+.what_main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.planet {
+    background: url(images/planet-illustration-09.png) no-repeat;
+    width: 601px;
+    height: 586px;
+
+    /*max-width: 600px;
+    height: 650px;*/
+
+    margin-top: 15vh;
+    grid-row: 1;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*.planet > img{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}*/
+
+.plus_button {
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px var(--transparent-black);
+    z-index: 1;
+
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    border: 5px solid var(--green);
+    background-color: aliceblue;
+    text-align: center;
+    -webkit-transition: background 0.2s linear;
+    -moz-transition: background 0.2s linear;
+    -ms-transition: background 0.2s linear;
+    -o-transition: background 0.2s linear;
+    transition: background 0.2s linear;
+    transition: color 0.2s linear;
+
+    font: 50px Arial, sans-serif;
+    color: var(--light-blue);
+
+}
+
+.plus_button:hover {
+    background: var(--light-blue);
+    cursor: pointer;
+}
+
+.arctic_position {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 140px;
+    margin-top: 3px;
+}
+
+.frog_position {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 40px;
+    margin-top: 290px;
+}
+
+.africa_position {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 40px;
+    margin-top: 290px;
+}
+
+.plusSign {
+    line-height: 0rem;
+}
+
+.plusSign:hover {
+    color: white;
+}
+
+/*--------------------HOW PAGE--------------------*/
+
+.steps img {
+    max-width: 55%;
+    margin-left: 15%;
+}
+
+.blue img {
+    margin-left: 30%;
+}
+
+.earth img {
+    max-width: 25%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .burger_menu {
+        position: fixed;
+        top: 2vh;
+        left: 83vw;
+        display: block;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        z-index: 10;
+        border: none;
+        border-radius: 50%;
+        outline: none;
+        background-color: var(--white);
+    }
+
+    nav {
+        display: none;
+        height: auto;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        font-size: 10px;
+        padding: 5px;
+        text-align: center;
+        margin: 0;
+    }
+
+    nav li {
+        padding: 5px;
+    }
+
+    .bg_image > img {
+        max-width: 100%;
+    }
+
+    .about_gp {
+        grid-template-columns: 1fr;
+    }
+
+    .about_gp > h2 {
+        grid-column: 1;
+    }
+
+    .about_gp > .about_gp_subheading {
+        grid-column: 1;
+    }
+
+    .about_gp > .about_gp_text {
+        grid-column: 1;
+    }
+
+    .about_gp > a > button {
+        grid-column: 1;
+    }
+
+    .gp-logo {
+        display: none;
+    }
+}
