@@ -12,8 +12,6 @@
 
 <body>
 
-    <button class="burger_menu"><img src="images/menu-sm.png" alt="menu"></button>
-
     <nav id="navbar">
         <div class="link_position">
             <a href="index.html">Home</a>
@@ -24,24 +22,37 @@
     </nav>
 
     <main class="what_main">
-        <div class="planet">
-            <!--<img src="images/planet-illustration-09.png">-->
+            <div class="planet_view">
+                <div class="planet">
+                    <!--<img src="images/planet-illustration-09.png">-->
+                </div>
+                <button type="button" class="plus_button plusSign arctic_position" id="arctic_btn">
+                    &#43;
+                </button>
 
-            <button type="button" class="plus_button plusSign arctic_position" id="arctic_btn" onclick="showadvice1">
-                &#43;
-            </button>
+                <button type="button" class="plus_button frog_position plusSign" id="frog_btn">
+                    &#43;
+                </button>
 
-            <button type="button" class="plus_button frog_position plusSign" id="frog_btn" onclick="showadvice1">
-                &#43;
-            </button>
+                <button type="button" class="plus_button africa_position plusSign" id="africa_btn">
+                    &#43;
+                </button>
 
-            <button type="button" class="plus_button africa_position plusSign" id="africa_btn" onclick="showadvice1">
-                &#43;
-            </button>
+                <div id="arctic" class="info-bubble info-bubble-arctic">
+                    The Arctic region may have its first completely ice-free summer by 2040
+                </div>
+                <div id="frog" class="info-bubble info-bubble-frog">
+                    The golden Toad is the first species to go extinct due to climate change
+                </div>
+                <div id="africa" class="info-bubble info-bubble-africa">
+                    Between July 2011 and <br>mid-2012, a severe drought affected the entire East Africa region and was said to be “the worst drought in 60 years
+                </div>
 
-        </div>
+            </div>
 
-        <div class="frog_info" id="frog">
+
+
+        <!--<div class="frog_info" id="frog">
             <div class="advice_content">
                 <span class="fclose">&times;</span>
                 <br>
@@ -60,9 +71,9 @@
             <div class="advice_content">
                 <span class="afclose">&times;</span>
                 <br>
-                <p>Despite the fact that the African continent has contributed the least to anthropogenic factors causing climate change, Africa is the worst hit. Evidence shows that the change in temperature has affected the health, livelihoods, food productivity, water availability, and overall security of the African people<br><br>Between July 2011 and mid-2012, a severe drought affected the entire East Africa region and was said to be “the worst drought in 60 years.”</p>
+                <p>Despite the fact that the African continent has contributed the least to anthropogenic factors causing climate change, Africa is the worst hit. Evidence shows that the change in temperature has affected the health, livelihoods, food productivity, water availability, and overall security of the African people<br><br>Between July 2011 and mid-2012, a severe drought affected the entire East Africa region and was said to be “the worst drought in 60 years.</p>
             </div>
-        </div>
+        </div>-->
 
         <div class="facts_container">
             <p class="fact1">
@@ -124,6 +135,4 @@
 
     <script src="script-planet.js"></script>
 
-</body>
-
-</html>
+</body></html>
