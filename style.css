@@ -94,7 +94,7 @@ nav a:hover, nav a.active {
     display: none;
 }
 
-.index_main {
+.index_main, .how_main {
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
@@ -291,7 +291,6 @@ nav a:hover, nav a.active {
 
 }
 .planet_view {
-
     display: grid;
     grid-template-columns: repeat(26, 30px);
     grid-template-rows: repeat(20, 30px);
@@ -477,31 +476,9 @@ nav a:hover, nav a.active {
     display: none;
 }
 
-/*.consequences-bg{
-    margin-top: 10vh;
-    background: url(images/consequences-02.png) no-repeat;
-    width: 100%;
-    height: 379px;
-    background-position: center;
-    background-size: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-}*/
 .consequences-heading{
     text-align: center;
     margin-top: 10vh;
-    /*padding-top: 10vh;*/
-    /*border-top: 2px solid var(--blue);*/
-    /*grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    margin-top: auto;
-    margin-bottom: auto;
-    justify-self: center;
-    background-color: var(--transparent-black);
-    color: white;
-    height: auto;
-    width: auto;
-    padding: 30px 100px;*/
 }
 .consequences{
     width: 80%;
@@ -558,6 +535,9 @@ nav a:hover, nav a.active {
 
 
 /*--------------------HOW PAGE--------------------*/
+.how_main {
+    padding-top: 90px;
+}
 
 .steps img{
     margin-left: 15%;
@@ -578,7 +558,6 @@ nav a:hover, nav a.active {
 h1{
     text-align: center;
 }
-
 
 @media only screen and (max-width: 1400px){
     .video-container{
@@ -675,9 +654,8 @@ h1{
         font-size: 16px;
         line-height: 25px;
 
-        padding: 10px;
+        padding: 20px;
         margin: 10px;
-        background-color: var(--transparent-blue);
         color: var(--white);
         letter-spacing: 1px;
         -webkit-box-shadow: 0px 6px 21px -11px rgba(0,0,0,0.75);
@@ -689,12 +667,15 @@ h1{
     }
     .facts_container > .fact1{
         grid-row: 1;
+        background-color: var(--green);
     }
     .facts_container > .fact2{
         grid-row: 2;
+        background-color: var(--transparent-blue);
     }
     .facts_container > .fact3{
         grid-row: 3;
+        background-color: burlywood;
     }
 
     .consequences-heading{
@@ -707,5 +688,9 @@ h1{
     .figure_sun{
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .how_main {
+        padding-top: 0px;
     }
 }
