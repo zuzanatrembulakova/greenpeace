@@ -556,6 +556,30 @@ nav a:hover, nav a.active {
     }
 }
 
+
+/*--------------------HOW PAGE--------------------*/
+
+.steps img{
+    margin-left: 15%;
+    max-width: 55%;
+}
+
+.blue img{
+    margin-left: 30%;
+}
+
+.earth img {
+    max-width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+
 @media only screen and (max-width: 1400px){
     .video-container{
         height: auto;
