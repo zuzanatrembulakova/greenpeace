@@ -89,11 +89,6 @@ nav a:hover, nav a.active {
     border-bottom: 2px solid var(--blue);
 }
 
-/* Hide the link that should open and close the topnav on small screens */
-.burger_menu {
-    display: none;
-}
-
 .index_main, .how_main {
     max-width: 1300px;
     margin-left: auto;
@@ -271,7 +266,19 @@ nav a:hover, nav a.active {
     grid-row: 1 / 5;
     grid-column: 1;
     align-self: center;
+    justify-self: center;
+
+    background: url(images/gp-logo-animation2-01.svg) no-repeat;
+    width: 300px;
+    height: 300px;
+    animation: gplogo 2s steps(21) reverse;
 }
+@keyframes gplogo {
+    100% {
+        background-position: /*-12600px*/-6300px 0;
+    }
+}
+
 
 /*--------------------WHAT PAGE--------------------*/
 
@@ -281,15 +288,41 @@ nav a:hover, nav a.active {
 }
 
 .space{
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--transparent-black);
-    width: 100%;
-    height: 100%;
-    /*background: url(images/meteor-animation-01.svg) no-repeat;
-    width: 300px;*/
-
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
+.stars, .twinkling, .clouds {
+	position:absolute;
+	display:block;
+	top:0; bottom:0;
+	left:0; right:0;
+	width:100%; height:100%;
+}
+.stars {
+	z-index: 0;
+	background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
+}
+.twinkling{
+	z-index: 1;
+	background:transparent url('https://image.ibb.co/ir1DE8/twinkling.png') repeat top center;
+	animation: move-twink-back 200s linear infinite;
+}
+.clouds{
+	z-index: 2;
+    background:transparent url('https://image.ibb.co/bT4N7T/clouds.png') repeat top center;
+	animation: move-clouds-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+	from {background-position:0 0;}
+	to {background-position:-10000px 5000px;}
+}
+@keyframes move-clouds-back {
+	from {background-position:0 0;}
+	to {background-position:10000px 0;}
+}
+
 .planet_view {
     display: grid;
     grid-template-columns: repeat(26, 30px);
@@ -297,11 +330,13 @@ nav a:hover, nav a.active {
     margin-left: auto;
     margin-right: auto;
     margin-top: 15vh;
+    z-index: 99;
 }
 .planet{
     background: url(images/planet-illustration-09.png) no-repeat;
     width: 601px;
     height: 586px;
+
 
     /*max-width: 600px;
     height: 650px;*/
@@ -388,6 +423,7 @@ nav a:hover, nav a.active {
     border-radius: 50%;
     box-shadow: 2px 2px 2px var(--transparent-black);
     z-index: 1;
+    outline: none;
 
     width: 50px;
     height: 50px;
@@ -501,6 +537,7 @@ nav a:hover, nav a.active {
     background: url("images/sun-animation.svg") no-repeat;
     width: 198px;
     height: 210px;
+    margin-top: 5vh;
     margin-bottom: 10px;
     /*transform: translate3D(100px, 150px, 0);*/
 }
@@ -520,6 +557,7 @@ nav a:hover, nav a.active {
     width: 198px;
     height: 210px;
     justify-self: center;
+    margin-top: 5vh;
     margin-bottom: 10px;
     /*transform: translate3D(100px, 150px, 0);*/
 }
@@ -532,6 +570,30 @@ nav a:hover, nav a.active {
         background-position: -4400px 0;
     }
 }
+
+.figure_animal {
+    margin-left: auto;
+    margin-right: auto;
+    background: url("images/animal-animation-01-01.svg") no-repeat;
+
+    width: 200px;
+    height: 210px;
+    justify-self: center;
+    margin-top: 5vh;
+    margin-bottom: 10px;
+
+    /*transform: translate3D(100px, 150px, 0);*/
+}
+.figure_animal:hover{
+    animation: animal 1s steps(19) infinite;
+
+}
+@keyframes animal {
+    100% {
+        background-position: -3800px 0;
+    }
+}
+
 
 
 /*--------------------HOW PAGE--------------------*/
@@ -641,7 +703,7 @@ h1{
        display: none;
     }
 
-    .planet_view{
+    .space{
         display: none;
     }
     .facts_container{
