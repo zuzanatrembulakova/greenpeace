@@ -702,10 +702,13 @@ nav a.active {
     margin-right: auto;
 }
 
-h1 {
+.how_main h1 {
     text-align: center;
     padding-bottom: 10px;
 }
+
+
+/*--------------------RESPONSIVE--------------------*/
 
 @media only screen and (max-width: 1400px) {
     .video-container {
@@ -882,8 +885,9 @@ h1 {
         max-width: 35%;
     }
 
-    h1 {
+    .how_main h1 {
         padding-bottom: 0px;
+        font-size: 22px;
     }
 
 }
