@@ -534,19 +534,21 @@ nav a:hover, nav a.active {
 .figure_sun {
     margin-left: auto;
     margin-right: auto;
-    background: url("images/sun-animation.svg") no-repeat;
+    background: url("images/sun-animation1-02.svg") no-repeat;
     width: 198px;
     height: 210px;
     margin-top: 5vh;
     margin-bottom: 10px;
     /*transform: translate3D(100px, 150px, 0);*/
-}
-.figure_sun:hover{
+
+    animation: spin 1s steps(10) infinite;
+    }
+/*.figure_sun:hover{
     animation: spin .2s steps(22) infinite;
-}
+}*/
 @keyframes spin {
     100% {
-        background-position: -4400px 0;
+        background-position: -2000px 0;
     }
 }
 
@@ -560,11 +562,13 @@ nav a:hover, nav a.active {
     margin-top: 5vh;
     margin-bottom: 10px;
     /*transform: translate3D(100px, 150px, 0);*/
+
+    animation: ice 1s steps(22) infinite;
 }
-.figure_icebearg:hover{
+/*.figure_icebearg:hover{
     animation: ice 1s steps(22) infinite;
 
-}
+}*/
 @keyframes ice {
     100% {
         background-position: -4400px 0;
@@ -574,7 +578,7 @@ nav a:hover, nav a.active {
 .figure_animal {
     margin-left: auto;
     margin-right: auto;
-    background: url("images/animal-animation-01-01.svg") no-repeat;
+    background: url("images/tiger-animation1-01.svg") no-repeat;
 
     width: 200px;
     height: 210px;
@@ -583,14 +587,15 @@ nav a:hover, nav a.active {
     margin-bottom: 10px;
 
     /*transform: translate3D(100px, 150px, 0);*/
-}
-.figure_animal:hover{
-    animation: animal 1s steps(19) infinite;
 
+    animation: animal 3s steps(32) infinite;
 }
+/*.figure_animal:hover{
+    animation: animal 3s steps(32) infinite;
+}*/
 @keyframes animal {
     100% {
-        background-position: -3800px 0;
+        background-position: -6400px 0;
     }
 }
 
