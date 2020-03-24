@@ -95,7 +95,7 @@ nav {
 }
 .link_position {
     margin: 30px;
-    margin-right: 200px;
+    margin-right: 30px;
     float: right;
 }
 nav a {
@@ -113,6 +113,10 @@ nav a:hover,nav a.active{
     border-bottom: 2px solid var(--blue);
 }
 
+.logo{
+    margin: 3px;
+    outline: none;
+}
 .index_main, .how_main {
     max-width: 1300px;
     margin-left: auto;
@@ -155,6 +159,7 @@ nav a:hover,nav a.active{
 
 .overlay-desc > a{
     text-decoration: none;
+    justify-self: end;
 }
 .overlay-desc > a > button{
     grid-row: 2;
@@ -249,6 +254,7 @@ nav a:hover,nav a.active{
     font-weight: 700;
 
 }
+
 /*--------------------WHO PAGE--------------------*/
 
 .bg_image > img{
@@ -328,10 +334,7 @@ nav a:hover,nav a.active{
     align-items: center;
     justify-content: center;
 }
-
-.stars,
-.twinkling,
-.clouds {
+.stars, .twinkling, .clouds {
     position: absolute;
     display: block;
     top: 0;
@@ -346,13 +349,11 @@ nav a:hover,nav a.active{
     z-index: 0;
     background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
 }
-
 .twinkling {
     z-index: 1;
     background: transparent url('https://image.ibb.co/ir1DE8/twinkling.png') repeat top center;
     animation: move-twink-back 200s linear infinite;
 }
-
 .clouds {
     z-index: 2;
     background: transparent url('https://image.ibb.co/bT4N7T/clouds.png') repeat top center;
@@ -368,7 +369,6 @@ nav a:hover,nav a.active{
         background-position: -10000px 5000px;
     }
 }
-
 @keyframes move-clouds-back {
     from {
         background-position: 0 0;
@@ -385,10 +385,9 @@ nav a:hover,nav a.active{
     grid-template-rows: repeat(20, 30px);
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
+    margin-top: 110px;
     z-index: 99;
 }
-
 .planet {
     background: url(images/planet-illustration-09.png) no-repeat;
     width: 601px;
@@ -421,7 +420,6 @@ nav a:hover,nav a.active{
     margin-left: 15px;
     /*display: none;*/
 }
-
 .info-bubble-arctic:after {
     content: '';
     position: absolute;
@@ -442,7 +440,6 @@ nav a:hover,nav a.active{
     margin-top: 15px;
     /*display: none;*/
 }
-
 .info-bubble-frog:after {
     content: '';
     position: absolute;
@@ -463,7 +460,6 @@ nav a:hover,nav a.active{
     margin-top: 15px;
     /*display: none;*/
 }
-
 .info-bubble-africa:after {
     content: '';
     position: absolute;
@@ -502,7 +498,6 @@ nav a:hover,nav a.active{
     color: var(--light-blue);
 
 }
-
 .plus_button:hover {
     background: var(--light-blue);
     cursor: pointer;
@@ -513,12 +508,10 @@ nav a:hover,nav a.active{
     grid-row: 1;
     margin-top: 6px;
 }
-
 .frog_position {
     grid-column: 5;
     grid-row: 11;
 }
-
 .africa_position {
     grid-column: 22;
     grid-row: 10;
@@ -527,7 +520,6 @@ nav a:hover,nav a.active{
 .plusSign {
     line-height: 0rem;
 }
-
 .plusSign:hover {
     color: white;
 }
@@ -535,10 +527,7 @@ nav a:hover,nav a.active{
 .facts_container {
     display: none;
 }
-
-.frog_info,
-.arctic_info,
-.africa_info {
+.frog_info, .arctic_info, .africa_info {
     display: none;
     position: fixed;
     z-index: 99;
@@ -552,7 +541,6 @@ nav a:hover,nav a.active{
     background-color: rgba(0, 0, 0, 0.8);
     /* Black w/ opacity */
 }
-
 .advice_content {
     background-color: none;
     margin: 15% auto;
@@ -565,27 +553,20 @@ nav a:hover,nav a.active{
     text-align: center;
 }
 
-.fclose,
-.aclose,
-.afclose {
+.fclose, .aclose, .afclose {
     color: #aaa;
     font-size: 30px;
     font-weight: bold;
     float: right;
     cursor: pointer;
 }
-
-.fclose:focus,
-.aclose:focus,
-.afclose:focus {
+.fclose:focus, .aclose:focus, .afclose:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
 }
 
-#frog,
-#arctic,
-#africa {
+#frog, #arctic, #africa {
     display: none;
 }
 
@@ -593,7 +574,6 @@ nav a:hover,nav a.active{
     text-align: center;
     margin-top: 10vh;
 }
-
 .consequences {
     width: 80%;
     margin-left: auto;
@@ -604,7 +584,6 @@ nav a:hover,nav a.active{
     text-align: center;
 
 }
-
 .consequences > div {
     display: grid;
     grid-template-columns: 1fr;
@@ -622,10 +601,6 @@ nav a:hover,nav a.active{
 
     animation: spin 1s steps(10) infinite;
 }
-
-/*.figure_sun:hover{
-    animation: spin .2s steps(22) infinite;
-}*/
 @keyframes spin {
     100% {
         background-position: -2000px 0;
@@ -645,11 +620,6 @@ nav a:hover,nav a.active{
 
     animation: ice 1s steps(22) infinite;
 }
-
-/*.figure_icebearg:hover{
-    animation: ice 1s steps(22) infinite;
-
-}*/
 @keyframes ice {
     100% {
         background-position: -4400px 0;
@@ -671,10 +641,6 @@ nav a:hover,nav a.active{
 
     animation: animal 3s steps(32) infinite;
 }
-
-/*.figure_animal:hover{
-    animation: animal 3s steps(32) infinite;
-}*/
 @keyframes animal {
     100% {
         background-position: -6400px 0;
@@ -717,12 +683,10 @@ nav a:hover,nav a.active{
     .video-container {
         height: auto;
     }
-
     .overlay-desc {
         top: 15vh;
         right: 10vw;
     }
-
     .overlay-desc > a > button {
         font-size: 14px;
         background-color: transparent;
@@ -742,7 +706,6 @@ nav a:hover,nav a.active{
 
 
 }
-
 @media only screen and (max-width: 1000px){
     .overlay-desc{
         display: none;
@@ -768,6 +731,9 @@ nav a:hover,nav a.active{
         font-size: 15px;
     }
 
+    .logo{
+        display: none;
+    }
     footer ul {
         padding: 0;
     }
@@ -891,7 +857,6 @@ nav a:hover,nav a.active{
     }
 
 }
-
 @media only screen and (max-width: 600px) {
     .steps img {
         max-width: 100%;
