@@ -42,32 +42,28 @@ africabtn.onclick = function () {
     froginfo.style.display = "none";
 }
 
-// Get the <span> element that closes the modal
-/*var fspan = document.getElementsByClassName("fclose")[0];
-var aspan = document.getElementsByClassName("aclose")[0];
-var afspan = document.getElementsByClassName("afclose")[0];
+/*-------GO TO TOP BTN------------------------------*/
 
-// When the user clicks on <span> (x), close the modal
-fspan.onclick = function () {
-    froginfo.style.display = "none";
-}
-
-aspan.onclick = function () {
-    arcticinfo.style.display = "none";
-}
-
-afspan.onclick = function () {
-    africainfo.style.display = "none";
-}*/
-
-// When the user clicks anywhere outside of the modal, close it
-/*var window;
-window.onclick = function (event) {
-    if (event.target == froginfo) {
-        froginfo.style.display = "none";
-    } else if (event.target == africainfo) {
-        africainfo.style.display = "none";
-    } else if (event.target == arcticinfo) {
-        arcticinfo.style.display = "none";
+//enable/disable scroll button based on scroller position
+function scrollFunction() {
+    var topBtn = document.getElementById("topBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
     }
-}*/
+}
+
+window.onscroll = function () {
+    scrollFunction()
+};
+
+
+/*---GO TO TOP BTN-------------------------------------*/
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() { // eslint-disable-line no-unused-vars
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
